@@ -7,11 +7,16 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
+import net.minecraft.network.PacketBuffer;
 
 public class HammerContainer extends Container {
 
     private final IInventory hammerInventory;
     private final int rows;
+
+//    public static HammerContainer fromBuffer(int windowId, PlayerInventory inventory, PacketBuffer buffer) {
+//        return new HammerContainer(windowId, inventory.player, HammerContext.fromBuffer(buffer));
+//    }
 
     public HammerContainer(int id, PlayerInventory playerInventory, int rows) {
         this(id, playerInventory, new Inventory(9 * rows), rows);

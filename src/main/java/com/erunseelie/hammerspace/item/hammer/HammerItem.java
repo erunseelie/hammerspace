@@ -1,21 +1,31 @@
 package com.erunseelie.hammerspace.item.hammer;
 
-import com.erunseelie.hammerspace.ModItem;
+import com.erunseelie.hammerspace.Hammerspace;
+import com.erunseelie.hammerspace.item.ModItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class Hammer extends ModItem {
+public class HammerItem extends ModItem {
 
-    public Hammer(Properties properties) {
-        super(properties);
+    private static final ResourceLocation TEXTURE =
+            new ResourceLocation(Hammerspace.MOD_ID, "textures/item/hammer.png");
+
+    public HammerItem() {
+        super(new Item.Properties().maxStackSize(1));
+    }
+
+    public ResourceLocation getModelTexture() {
+        return TEXTURE;
     }
 
     @Override

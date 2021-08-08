@@ -7,7 +7,7 @@ loaderVersion = "[36,)"
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
 license = "All Rights Reserved"
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL = "github.com/erunseelie/hammerspace/issues"
+issueTrackerURL = "https://github.com/erunseelie/hammerspace/issues"
 # If the mods defined in this file should show as separate resource packs
 showAsResourcePack = false
 
@@ -15,7 +15,7 @@ showAsResourcePack = false
 modId = "hammerspace"
 version = "1.0"
 displayName = "Hammerspace"
-updateJSONURL = "minecraftforge.net/versions.json"
+updateJSONURL = "https://minecraftforge.net/versions.json"
 displayURL = "minecraftforge.net"
 logoFile = "logo.png"
 credits = ""

@@ -1,5 +1,6 @@
-package com.erunseelie.hammerspace;
+package com.erunseelie.hammerspace.item;
 
+import com.erunseelie.hammerspace.Hammerspace;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
