@@ -1,4 +1,4 @@
-package net.erunseelie.hammerspace.config;
+package com.erunseelie.hammerspace.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

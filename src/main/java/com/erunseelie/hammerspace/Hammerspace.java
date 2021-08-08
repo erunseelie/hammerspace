@@ -1,11 +1,7 @@
-package net.erunseelie.hammerspace;
+package com.erunseelie.hammerspace;
 
-import net.erunseelie.hammerspace.config.ClientConfig;
-import net.erunseelie.hammerspace.config.ServerConfig;
-import net.erunseelie.hammerspace.item.Hammer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import com.erunseelie.hammerspace.config.ClientConfig;
+import com.erunseelie.hammerspace.config.ServerConfig;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -23,12 +19,6 @@ public class Hammerspace {
     public static final ServerConfig SERVER_CONFIG = new ServerConfig();
     public static final ClientConfig CLIENT_CONFIG = new ClientConfig();
 
-    public static final ItemGroup ITEM_GROUP = new ItemGroup() {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(Hammer.get());
-        }
-    }
 
     public Hammerspace() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, SERVER_CONFIG.getSpec());
