@@ -1,13 +1,12 @@
 package com.erunseelie.hammerspace.item.hammer;
 
-import com.erunseelie.hammerspace.ModContainers;
+import com.erunseelie.hammerspace.init.RegistryContainers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
-import net.minecraft.network.PacketBuffer;
 
 public class HammerContainer extends Container {
 
@@ -23,7 +22,7 @@ public class HammerContainer extends Container {
     }
 
     public HammerContainer(int id, PlayerInventory playerInventory, IInventory hammerInventory, int rows) {
-        super(ModContainers.HAMMER.get(), id);
+        super(RegistryContainers.HAMMER.get(), id);
         assertInventorySize(hammerInventory, rows * 9);
         this.hammerInventory = hammerInventory;
         this.rows = rows;
